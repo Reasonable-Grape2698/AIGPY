@@ -53,7 +53,7 @@ def __tryList__(obj):
     if obj is None or len(obj) <= 0:
         return ''
     if isinstance(obj, str):
-        return obj if obj is not None
+        return obj
     return ", ".join(obj)
 
 
