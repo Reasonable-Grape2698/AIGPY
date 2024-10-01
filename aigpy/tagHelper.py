@@ -52,6 +52,8 @@ def __tryStr__(obj):
 def __tryList__(obj):
     if obj is None or len(obj) <= 0:
         return ''
+    if isinstance(obj, str):
+        return obj if obj is not None
     return ", ".join(obj)
 
 
